@@ -3,34 +3,17 @@ package twoDimensionArray;
 public class Main {
 
 	public static void main(String[] args) {
-	
-		for(int i = 0;i<=5;i++) {
-			for(int j=0;j<=i;j++){
-				System.out.print("*");
-			}
-			System.out.println();
-		}
+		int[][] Array = new int[2][2];
 		
-		System.out.println();
-		
-		for(int i =0;i<=5;i++) {
-			for(int j=i;j<=5;j++) {
-				System.out.print(" ");
-			}
-			for(int k=0;k<=i*2;k++) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
-		
-		System.out.println();
-		
-		for(int i=0;i<=5;i++) {
-			for(int j=i;j<=5;j++) {
-				System.out.print("*");
-			}
-			System.out.println();
+	Array[0][0] = 10;
+	Array[0][1] = 30;
+	Array[1][0] = 70;
+	Array[1][1] = 100;
+			
+	for(int i=0;i<Array.length;i++) {
+		for(int j=0;j<Array.length;j++) {
+			System.out.println(Array[i][j]);
 		}
 	}
-
+	}
 }
